@@ -107,6 +107,7 @@ class IthoCC1101 : protected CC1101
 		bool checkID(const uint8_t *id);
 		String getLastIDstr(bool ashex=true);
 		String getLastMessage2str(bool ashex=true);
+		String IthoCC1101::getLastMessage2CMDstr();
 
 
 		//send
@@ -170,6 +171,7 @@ class IthoCC1101 : protected CC1101
 
 		//test
 		void testCreateMessage();
+
 
 }; //IthoCC1101
 
